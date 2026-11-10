@@ -5,7 +5,7 @@ const app = new Hono();
 const pokemon = [
     {
         id: 1,
-        name: "Pikachu",
+        name: 'Pikachu',
         species: 'Pikachu',
         health: 100,
         level: 5,
@@ -91,7 +91,7 @@ app.patch('/api/pokemon/:id', async (c) => {
         return c.json({ error: 'Invalid JSON body' }, 400);
     }
     if (typeof body !== 'object' || body === null || Array.isArray(body)) {
-        return c.json({ error: 'Body must be a JSON obejct' }, 400);
+        return c.json({ error: 'Body must be a JSON object' }, 400);
     }
     const updates = body;
     const allowedFields = ['name', 'species', 'health', 'level', 'owner'];

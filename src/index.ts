@@ -16,7 +16,7 @@ type Pokemon = {
 const pokemon: Pokemon[] = [
   {
     id: 1,
-    name: "Pikachu",
+    name: 'Pikachu',
     species: 'Pikachu',
     health: 100,
     level: 5,
